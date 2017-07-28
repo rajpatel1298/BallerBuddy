@@ -1,0 +1,6 @@
+framework module Pods_BallerBuddy {
+  umbrella header "Pods-BallerBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1C0A7F610FF6759AAC055A /* Pods_BallerBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B3CB7B065267226B83320E /* Pods_BallerBuddy.framework */; };
+		CD340D091F2A445F00C4EBB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD340D081F2A445F00C4EBB8 /* GoogleService-Info.plist */; };
 		CD3EDDDF1F27F4B80070D006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */; };
 		CD3EDDE11F27F4B80070D006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDE01F27F4B80070D006 /* ViewController.swift */; };
 		CD3EDDE41F27F4B80070D006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3EDDE21F27F4B80070D006 /* Main.storyboard */; };
 		CD3EDDE71F27F4B80070D006 /* BallerBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDE51F27F4B80070D006 /* BallerBuddy.xcdatamodeld */; };
 		CD3EDDE91F27F4B80070D006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3EDDE81F27F4B80070D006 /* Assets.xcassets */; };
 		CD3EDDEC1F27F4B80070D006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3EDDEA1F27F4B80070D006 /* LaunchScreen.storyboard */; };
+		CD3EDDF71F27FEBE0070D006 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDF61F27FEBE0070D006 /* SWRevealViewController.m */; };
+		CD3EDDFA1F280CC20070D006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3EDDF91F280CC20070D006 /* MapKit.framework */; };
+		CD3EDDFC1F281B7F0070D006 /* SlidebarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDFB1F281B7F0070D006 /* SlidebarMenu.swift */; };
+		CD3EDDFE1F281D8C0070D006 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDFD1F281D8C0070D006 /* MapViewController.swift */; };
+		CDF600F31F2984E80079EFDF /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F21F2984E80079EFDF /* MenuTableViewController.swift */; };
+		CDF600F51F298C9D0079EFDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F41F298C9D0079EFDF /* LoginViewController.swift */; };
+		CDF600F71F298CB40079EFDF /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */; };
+		CDF600F91F298CC70079EFDF /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F81F298CC70079EFDF /* ContactsTableViewController.swift */; };
+		CDF600FB1F298CD90079EFDF /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600FA1F298CD90079EFDF /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E1B477C9919E9E8E7647C20 /* Pods-BallerBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallerBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4EBB6251E09A5DDF7A0B46 /* Pods-BallerBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallerBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		CD340D081F2A445F00C4EBB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD3EDDDB1F27F4B80070D006 /* BallerBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallerBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD3EDDE01F27F4B80070D006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +38,18 @@
 		CD3EDDE81F27F4B80070D006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3EDDEB1F27F4B80070D006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3EDDED1F27F4B80070D006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3EDDF41F27FEBD0070D006 /* BallerBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BallerBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD3EDDF51F27FEBE0070D006 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CD3EDDF61F27FEBE0070D006 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CD3EDDF91F280CC20070D006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD3EDDFB1F281B7F0070D006 /* SlidebarMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidebarMenu.swift; sourceTree = "<group>"; };
+		CD3EDDFD1F281D8C0070D006 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CDF600F21F2984E80079EFDF /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		CDF600F41F298C9D0079EFDF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		CDF600F81F298CC70079EFDF /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		CDF600FA1F298CD90079EFDF /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		E6B3CB7B065267226B83320E /* Pods_BallerBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BallerBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3EDDFA1F280CC20070D006 /* MapKit.framework in Frameworks */,
+				7B1C0A7F610FF6759AAC055A /* Pods_BallerBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EE76FDDB88D0AB2A2011789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E1B477C9919E9E8E7647C20 /* Pods-BallerBuddy.debug.xcconfig */,
+				BE4EBB6251E09A5DDF7A0B46 /* Pods-BallerBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD3EDDD21F27F4B80070D006 = {
 			isa = PBXGroup;
 			children = (
 				CD3EDDDD1F27F4B80070D006 /* BallerBuddy */,
 				CD3EDDDC1F27F4B80070D006 /* Products */,
+				CD3EDDF81F280CC20070D006 /* Frameworks */,
+				9EE76FDDB88D0AB2A2011789 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,43 @@
 		CD3EDDDD1F27F4B80070D006 /* BallerBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				CD3EDDF31F27FE8E0070D006 /* SWRevealViewController */,
 				CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */,
-				CD3EDDE01F27F4B80070D006 /* ViewController.swift */,
 				CD3EDDE21F27F4B80070D006 /* Main.storyboard */,
+				CD3EDDE01F27F4B80070D006 /* ViewController.swift */,
+				CD3EDDFB1F281B7F0070D006 /* SlidebarMenu.swift */,
 				CD3EDDE81F27F4B80070D006 /* Assets.xcassets */,
 				CD3EDDEA1F27F4B80070D006 /* LaunchScreen.storyboard */,
 				CD3EDDED1F27F4B80070D006 /* Info.plist */,
+				CD340D081F2A445F00C4EBB8 /* GoogleService-Info.plist */,
 				CD3EDDE51F27F4B80070D006 /* BallerBuddy.xcdatamodeld */,
+				CD3EDDFD1F281D8C0070D006 /* MapViewController.swift */,
+				CDF600F21F2984E80079EFDF /* MenuTableViewController.swift */,
+				CDF600F41F298C9D0079EFDF /* LoginViewController.swift */,
+				CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */,
+				CDF600F81F298CC70079EFDF /* ContactsTableViewController.swift */,
+				CDF600FA1F298CD90079EFDF /* SettingsTableViewController.swift */,
 			);
 			path = BallerBuddy;
+			sourceTree = "<group>";
+		};
+		CD3EDDF31F27FE8E0070D006 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD3EDDF51F27FEBE0070D006 /* SWRevealViewController.h */,
+				CD3EDDF61F27FEBE0070D006 /* SWRevealViewController.m */,
+				CD3EDDF41F27FEBD0070D006 /* BallerBuddy-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		CD3EDDF81F280CC20070D006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3EDDF91F280CC20070D006 /* MapKit.framework */,
+				E6B3CB7B065267226B83320E /* Pods_BallerBuddy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD3EDDF01F27F4B80070D006 /* Build configuration list for PBXNativeTarget "BallerBuddy" */;
 			buildPhases = (
+				4D07CB92C908DF15E19D2986 /* [CP] Check Pods Manifest.lock */,
 				CD3EDDD71F27F4B80070D006 /* Sources */,
 				CD3EDDD81F27F4B80070D006 /* Frameworks */,
 				CD3EDDD91F27F4B80070D006 /* Resources */,
+				41AB78F2C4C9A10615AD8B5A /* [CP] Embed Pods Frameworks */,
+				3CED8C18AC74C12678E1A1DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,7 +170,13 @@
 					CD3EDDDA1F27F4B80070D006 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = EHF5WYNYGX;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3EDDEC1F27F4B80070D006 /* LaunchScreen.storyboard in Resources */,
+				CD340D091F2A445F00C4EBB8 /* GoogleService-Info.plist in Resources */,
 				CD3EDDE91F27F4B80070D006 /* Assets.xcassets in Resources */,
 				CD3EDDE41F27F4B80070D006 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +212,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CED8C18AC74C12678E1A1DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41AB78F2C4C9A10615AD8B5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D07CB92C908DF15E19D2986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD3EDDD71F27F4B80070D006 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3EDDFC1F281B7F0070D006 /* SlidebarMenu.swift in Sources */,
+				CDF600F31F2984E80079EFDF /* MenuTableViewController.swift in Sources */,
+				CDF600F91F298CC70079EFDF /* ContactsTableViewController.swift in Sources */,
+				CDF600FB1F298CD90079EFDF /* SettingsTableViewController.swift in Sources */,
+				CDF600F71F298CB40079EFDF /* ChatTableViewController.swift in Sources */,
+				CD3EDDFE1F281D8C0070D006 /* MapViewController.swift in Sources */,
 				CD3EDDE11F27F4B80070D006 /* ViewController.swift in Sources */,
+				CDF600F51F298C9D0079EFDF /* LoginViewController.swift in Sources */,
 				CD3EDDDF1F27F4B80070D006 /* AppDelegate.swift in Sources */,
 				CD3EDDE71F27F4B80070D006 /* BallerBuddy.xcdatamodeld in Sources */,
+				CD3EDDF71F27FEBE0070D006 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,26 +396,33 @@
 		};
 		CD3EDDF11F27F4B80070D006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1B477C9919E9E8E7647C20 /* Pods-BallerBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EHF5WYNYGX;
 				INFOPLIST_FILE = BallerBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RajPatel.BallerBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BallerBuddy/BallerBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CD3EDDF21F27F4B80070D006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4EBB6251E09A5DDF7A0B46 /* Pods-BallerBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EHF5WYNYGX;
 				INFOPLIST_FILE = BallerBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RajPatel.BallerBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BallerBuddy/BallerBuddy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +446,7 @@
 				CD3EDDF21F27F4B80070D006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
