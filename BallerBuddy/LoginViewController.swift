@@ -14,6 +14,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var segmentedControl: UISegmentedControl!
+    @IBOutlet var loginRegisterButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.nameTextField.delegate = self
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
+        segmentedControl.addTarget(self, action: #selector(handleLoginRegisterChange), for: .valueChanged)
+        
+//        self.hideKeyboardWhenTappedAround()
         
 
         // Do any additional setup after loading the view.
@@ -29,6 +35,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//    
+//    }
+//    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        print("Stopped editing text field")
+//        self.viewDidLoad()
+//        self.viewWillAppear(true)
+//    }
+//    
+    func handleLoginRegisterChange(){
+        let title = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)
+        loginRegisterButton.setTitle(title, for: .normal)
+        
     }
     
     
@@ -72,7 +94,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         print(123)
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.resignFirstResponder()
+        if let enteredText = nameTextField.text {
+           let groupName = enteredText
+            print(groupName)
+        }
+        return true
+    }
     
     
     /*
