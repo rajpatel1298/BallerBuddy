@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B1C0A7F610FF6759AAC055A /* Pods_BallerBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B3CB7B065267226B83320E /* Pods_BallerBuddy.framework */; };
+		CD02E5BD1F2E6DAE005CD3D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02E5BC1F2E6DAE005CD3D3 /* User.swift */; };
 		CD340D091F2A445F00C4EBB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD340D081F2A445F00C4EBB8 /* GoogleService-Info.plist */; };
 		CD3EDDDF1F27F4B80070D006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */; };
 		CD3EDDE11F27F4B80070D006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDE01F27F4B80070D006 /* ViewController.swift */; };
@@ -19,6 +20,9 @@
 		CD3EDDFA1F280CC20070D006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3EDDF91F280CC20070D006 /* MapKit.framework */; };
 		CD3EDDFC1F281B7F0070D006 /* SlidebarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDFB1F281B7F0070D006 /* SlidebarMenu.swift */; };
 		CD3EDDFE1F281D8C0070D006 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3EDDFD1F281D8C0070D006 /* MapViewController.swift */; };
+		CD5F5C8F1F2D55D80072334A /* NewMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F5C8E1F2D55D80072334A /* NewMessageTableViewController.swift */; };
+		CD5F5C911F2D5CDA0072334A /* NewMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F5C901F2D5CDA0072334A /* NewMessageTableViewCell.swift */; };
+		CD6F1CC81F3E445E005F73D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F1CC71F3E445E005F73D0 /* Extensions.swift */; };
 		CDF600F31F2984E80079EFDF /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F21F2984E80079EFDF /* MenuTableViewController.swift */; };
 		CDF600F51F298C9D0079EFDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F41F298C9D0079EFDF /* LoginViewController.swift */; };
 		CDF600F71F298CB40079EFDF /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */; };
@@ -29,6 +33,7 @@
 /* Begin PBXFileReference section */
 		3E1B477C9919E9E8E7647C20 /* Pods-BallerBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallerBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy.debug.xcconfig"; sourceTree = "<group>"; };
 		BE4EBB6251E09A5DDF7A0B46 /* Pods-BallerBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallerBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BallerBuddy/Pods-BallerBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		CD02E5BC1F2E6DAE005CD3D3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD340D081F2A445F00C4EBB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD3EDDDB1F27F4B80070D006 /* BallerBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallerBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,9 @@
 		CD3EDDF91F280CC20070D006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CD3EDDFB1F281B7F0070D006 /* SlidebarMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidebarMenu.swift; sourceTree = "<group>"; };
 		CD3EDDFD1F281D8C0070D006 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CD5F5C8E1F2D55D80072334A /* NewMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewController.swift; sourceTree = "<group>"; };
+		CD5F5C901F2D5CDA0072334A /* NewMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewCell.swift; sourceTree = "<group>"; };
+		CD6F1CC71F3E445E005F73D0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CDF600F21F2984E80079EFDF /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		CDF600F41F298C9D0079EFDF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CD02E5BB1F2E6D9A005CD3D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD02E5BC1F2E6DAE005CD3D3 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CD3EDDD21F27F4B80070D006 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +111,8 @@
 		CD3EDDDD1F27F4B80070D006 /* BallerBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				CD6F1CC61F3E4443005F73D0 /* Helpers */,
+				CD02E5BB1F2E6D9A005CD3D3 /* Model */,
 				CD3EDDF31F27FE8E0070D006 /* SWRevealViewController */,
 				CD3EDDDE1F27F4B80070D006 /* AppDelegate.swift */,
 				CD3EDDE21F27F4B80070D006 /* Main.storyboard */,
@@ -111,6 +129,8 @@
 				CDF600F61F298CB40079EFDF /* ChatTableViewController.swift */,
 				CDF600F81F298CC70079EFDF /* ContactsTableViewController.swift */,
 				CDF600FA1F298CD90079EFDF /* SettingsTableViewController.swift */,
+				CD5F5C8E1F2D55D80072334A /* NewMessageTableViewController.swift */,
+				CD5F5C901F2D5CDA0072334A /* NewMessageTableViewCell.swift */,
 			);
 			path = BallerBuddy;
 			sourceTree = "<group>";
@@ -132,6 +152,14 @@
 				E6B3CB7B065267226B83320E /* Pods_BallerBuddy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD6F1CC61F3E4443005F73D0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F1CC71F3E445E005F73D0 /* Extensions.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,13 +297,17 @@
 				CDF600F31F2984E80079EFDF /* MenuTableViewController.swift in Sources */,
 				CDF600F91F298CC70079EFDF /* ContactsTableViewController.swift in Sources */,
 				CDF600FB1F298CD90079EFDF /* SettingsTableViewController.swift in Sources */,
+				CD5F5C8F1F2D55D80072334A /* NewMessageTableViewController.swift in Sources */,
 				CDF600F71F298CB40079EFDF /* ChatTableViewController.swift in Sources */,
+				CD02E5BD1F2E6DAE005CD3D3 /* User.swift in Sources */,
 				CD3EDDFE1F281D8C0070D006 /* MapViewController.swift in Sources */,
 				CD3EDDE11F27F4B80070D006 /* ViewController.swift in Sources */,
 				CDF600F51F298C9D0079EFDF /* LoginViewController.swift in Sources */,
+				CD6F1CC81F3E445E005F73D0 /* Extensions.swift in Sources */,
 				CD3EDDDF1F27F4B80070D006 /* AppDelegate.swift in Sources */,
 				CD3EDDE71F27F4B80070D006 /* BallerBuddy.xcdatamodeld in Sources */,
 				CD3EDDF71F27FEBE0070D006 /* SWRevealViewController.m in Sources */,
+				CD5F5C911F2D5CDA0072334A /* NewMessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,19 @@
 //
-//  ChatTableViewController.swift
+//  NewMessageTableViewController.swift
 //  BallerBuddy
 //
-//  Created by Raj Patel on 7/26/17.
+//  Created by Raj Patel on 7/29/17.
 //  Copyright © 2017 AdaptConsulting. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class ChatTableViewController: UITableViewController {
-   
-    @IBOutlet var menuButton: UIBarButtonItem!
-
+class NewMessageTableViewController: UITableViewController {
+    
+    
+    var users = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,53 +23,90 @@ class ChatTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        
-        addSideBarMenu(leftMenuButton: menuButton)
-        setUpUserName()
-        
+        fetchUser()
     }
 
-    // Sets title of navigation item to the User's name
-    func setUpUserName(){
-        if FIRAuth.auth()?.currentUser?.uid != nil {
-            let uid = FIRAuth.auth()?.currentUser?.uid
-            FIRDatabase.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
-                
-                if let dictionary = snapshot.value as? [String: AnyObject]{
-                    self.navigationItem.title = dictionary["name"] as? String
-                }
-                
-            }, withCancel: nil)
-        }
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func fetchUser(){
+        FIRDatabase.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                let user = User()
+                
+                // App will crash if class properties do not match up with firebase keys
+                user.setValuesForKeys(dictionary)
+                self.users.append(user)
+                
+                // This will crash because of background thread, so use dispatch_async to fix
+                DispatchQueue.main.async(execute: {
+                    self.tableView.reloadData()
+                })
+
+            }
+            
+
+            
+        }, withCancel: nil)
+    }
+    
+    @IBAction func handleCancel(sender: UIBarButtonItem){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        
+        let cellIdentifier = "newMessageCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewMessageTableViewCell
+        
         // Configure the cell...
+        let user = users[indexPath.row]
+        cell.emailLabel.text = user.email
+        cell.nameLabel.text = user.name
+        cell.contactImageView.layer.cornerRadius = 30
+        cell.contactImageView.clipsToBounds = true
+        
+        if let profileImageUrl = user.profileImageURL{
 
+              cell.contactImageView.loadImageUsingCacheWithURLString(urlString: profileImageUrl)
+            
+//            let url = URL(string: profileImageUrl)
+//            URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
+//                
+//                // download hit error
+//                if error != nil {
+//                    print(error!)
+//                    return
+//                }
+//                
+//                DispatchQueue.main.async() {
+//                    cell.contactImageView.image = UIImage(data: data!)
+//                }
+//                
+//            }).resume()
+        }
+
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

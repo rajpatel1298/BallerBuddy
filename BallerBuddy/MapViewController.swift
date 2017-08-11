@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MapViewController: UIViewController {
     
@@ -17,6 +18,14 @@ class MapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         addSideBarMenu(leftMenuButton: menuButton)
+        
+        
+        if(FIRAuth.auth()?.currentUser?.uid == nil){
+            print("No one is signed in")
+        }
+        
+        print(FIRAuth.auth()?.currentUser?.email)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +33,13 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+//    func handleLogout(){
+//        
+//        let loginController = LoginViewController()
+//        present(loginController, animated: true, completion: nil)
+//    }
+    
+    
     /*
     // MARK: - Navigation
 

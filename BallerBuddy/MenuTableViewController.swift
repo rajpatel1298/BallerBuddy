@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuTableViewController: UITableViewController {
     
     @IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var usernameLabel: UILabel!
+    
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +25,79 @@ class MenuTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        profileImageView.layer.cornerRadius = 50
-        profileImageView.clipsToBounds = true
+//        fetchCurrentUser()
+//        setUpView()
+        
+//        profileImageView.layer.cornerRadius = 50
+//        profileImageView.clipsToBounds = true
         
     }
 
+    func fetchCurrentUser(){
+        if FIRAuth.auth()?.currentUser?.uid != nil {
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            FIRDatabase.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+                
+                 if let dictionary = snapshot.value as? [String: AnyObject] {
+                    self.user.setValuesForKeys(dictionary)
+                 }
+                
+                DispatchQueue.main.async(execute: {
+                    self.tableView.reloadData()
+                })
+                
+            }, withCancel: nil)
+        }
+        
+        print(user.name!)
+        print(user.profileImageURL!)
+    }
+    
+    
+    func setUpView(){
+        
+        if let userName = user.name {
+            self.usernameLabel.text = userName
+        }
+        
+        if let imageURL = user.profileImageURL {
+            if let url = NSURL(string: imageURL) {
+                if let data = NSData(contentsOf: url as URL){
+                    self.profileImageView.layer.cornerRadius = 50
+                    self.profileImageView.clipsToBounds = true
+                    self.profileImageView.image = UIImage(data: data as Data)
+                }
+            }
+        }
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+//    func fetchUser(){
+//        FIRDatabase.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+//            
+//            if let dictionary = snapshot.value as? [String: AnyObject] {
+//                let user = User()
+//                
+//                // App will crash if class properties do not match up with firebase keys
+//                user.setValuesForKeys(dictionary)
+//                self.users.append(user)
+//                
+//                // This will crash because of background thread, so use dispatch_async to fix
+//                DispatchQueue.main.async(execute: {
+//                    self.tableView.reloadData()
+//                })
+//                
+//            }
+//            
+//            
+//            
+//        }, withCancel: nil)
+//    }
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
