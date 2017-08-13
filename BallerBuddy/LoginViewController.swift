@@ -162,9 +162,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
             
             // Successfully authenticated user
             let imageName = NSUUID().uuidString
-            let storageRef = FIRStorage.storage().reference().child("profile_images").child("\(imageName).png")
+            let storageRef = FIRStorage.storage().reference().child("profile_images").child("\(imageName).jpg")
            
-            if let uploadData = UIImagePNGRepresentation(self.profileImageView.image!) {
+            if let profileImage = self.profileImageView.image, let uploadData = UIImageJPEGRepresentation(profileImage, 0.1){
+                
+            
+//            if let uploadData = UIImagePNGRepresentation(self.profileImageView.image!) {
              storageRef.put(uploadData, metadata: nil, completion: { (metadata, error) in
                 if error != nil {
                     print(error!)
